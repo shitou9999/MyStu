@@ -1,1 +1,2 @@
-include ':app'
+include ':app', ':app2', ':app3'
+//包含哪些模块，比如有app和library：

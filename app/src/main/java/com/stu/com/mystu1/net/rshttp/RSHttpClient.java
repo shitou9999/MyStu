@@ -16,16 +16,12 @@ public class RSHttpClient<T extends RsBaseModel> extends HttpClientImpl<T>  {
     }
 
 
-
-
     @Override
     public void postJson(String targetUri, Map<String, String> params, Map<String, String> header, final IRsCallBack<T> callback , final Class<T> modelClass) {
         IRsCallBack<T> reSendCallBack = new IRsCallBackImp(targetUri,params,header, callback, modelClass);
         task = new AsyncTaskHandleJson<T>(this,"post",reSendCallBack,targetUri,params,header, modelClass);
         task.execute();
     }
-
-
 
 
     private class IRsCallBackImp implements IRsCallBack<T>{

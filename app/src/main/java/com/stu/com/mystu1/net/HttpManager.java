@@ -27,6 +27,7 @@ import java.util.Set;
 
 /**
  * Created by MT3020 on 2015/11/4.
+ * 网络请求工具类
  */
 public class HttpManager {
     static {
@@ -89,17 +90,11 @@ public class HttpManager {
     }
 
 
-
-
     public <T> void uploadFiles(String uri, Map<String,String> paras, Map<String, String> heads , Map<String, Object> files, IProgressCallBack<T> callBack, Class<T> defClass){
 
         IHttpClient<T> client = new HttpClientImpl<T>(null);
         client.uploadFiles(callBack,uri, heads, paras, files,defClass);
     }
-
-
-
-
 
 
     private Map<String, String> prepareHeadersInfo() {
@@ -119,8 +114,7 @@ public class HttpManager {
         return map;
     }
 
-    private <T> void mUploadFile(IProgressCallBack<T> listener, String name, Object file, Class<T> defClass, String
-            tag) {
+    private <T> void mUploadFile(IProgressCallBack<T> listener, String name, Object file, Class<T> defClass, String tag) {
         Map<String, String> headers = prepareHeadersInfo();
         Map<String, String> paras = prepareParasInfo();
         IHttpClient<T> client = new HttpClientImpl<T>(tag);
@@ -191,8 +185,7 @@ public class HttpManager {
      * @param tag      请求表示，可用来取消回调
      * @param <T>
      */
-    public <T> void get(String url, Map<?, ?> params, Map<?, ?> header, IRsCallBack callBack, Class<T> tClass, String
-            tag) {
+    public <T> void get(String url, Map<?, ?> params, Map<?, ?> header, IRsCallBack callBack, Class<T> tClass, String tag) {
         StringBuilder builder = new StringBuilder();
         builder.append(url);
         builder.append(":?");

@@ -12,13 +12,12 @@ public interface IHttpClient<T>  {
     public void uploadFile(IProgressCallBack<T> callback, String targetUri,
                            Map<String, String> headers, Map<String, String> paras, String fileName, Object data, Class<T> defClass /*data只能是BitMap或者byte[]*/);
     //批量上传文件
-   void uploadFiles(IProgressCallBack<T> callback, String targetUri, Map<String, String> headers, Map<String, String> params, Map<String, Object> fileMap, Class<T> defClass);
-//                           //支持 byte[] File BitMap Uri
-//
+   void uploadFiles(IProgressCallBack<T> callback, String targetUri,
+                    Map<String, String> headers, Map<String, String> params, Map<String, Object> fileMap, Class<T> defClass); //支持 byte[] File BitMap Uri
 
 
     public void uploadFile(IProgressCallBack<T> callBack, String targetUri,
-                           Map<String, String> paras, Map<String, String> headers, File file, Class<T> defClass);                       //支持 File
+                           Map<String, String> paras, Map<String, String> headers, File file, Class<T> defClass); //支持 File
 
     // 文件下载 保存到本地sd；CallBack 传入参数为 File类型；
     public void downLoadFileAndSave(IProgressCallBack<T> callBack, String targetUri);
