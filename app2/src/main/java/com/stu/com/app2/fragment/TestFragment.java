@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.stu.com.app2.BottomSheetBehavior.BottomSheetActivity;
-
+import com.stu.com.app2.R;
 import com.stu.com.app2.adapter_test.MultiItemRvActivity;
 import com.stu.com.app2.adapter_test.RecyclerViewActivity;
 

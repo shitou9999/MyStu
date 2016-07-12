@@ -12,11 +12,7 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".adapter_test.MultiItemListViewActivity"/>
         <activity android:name=".adapter_test.MultiItemRvActivity"/>
@@ -28,7 +24,14 @@
         </activity>
         <activity android:name=".BottomSheetBehavior.BottomSheetActivity">
         </activity>
-        <activity android:name=".gallery.KJGalleryActivity"></activity>
+        <activity android:name=".gallery.KJGalleryActivity"/>
+        <activity android:name=".custom_view.ch01_Drawable_Widget_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
