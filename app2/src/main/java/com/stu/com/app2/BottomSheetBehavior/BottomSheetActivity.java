@@ -94,4 +94,18 @@ public class BottomSheetActivity extends AppCompatActivity implements View.OnCli
 //    app:behavior_hideable="false"说明这个BottomSheet不可以被手动滑动隐藏，设置为true则可以滑到屏幕最底部隐藏。
 
 //    }
+
+
+//    项目开发使用 BottomSheet 遇到设置 GridView 方法 setSelection 没有生效，需要在 Runnable 中执行才能生效。
+//            list.post(new Runnable() {
+//        @Override
+//        public void run() {
+//            try {
+//                list.setSelection(10);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    });
+
 }

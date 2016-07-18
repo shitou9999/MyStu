@@ -7,6 +7,11 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.Button;
 
+/**
+ * 关于在attrs定义属性其实是存在着问题的。因为我们直接就定义了drawableWidth及drawableHeight属性，如果我有一个项目使用到它，
+ * 并且同时使用了另外一个库，那个库也定义了这两个属性的话，就会产生冲突了。
+ * 所以要强调一点：对于自定义属性，必须加上我们自己的前缀。比如把属性定义为nbDrawableWidth等等。
+ */
 public class DrawableButton extends Button {
     private DrawableSizeHelper mHelper;
 

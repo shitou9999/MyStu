@@ -58,6 +58,21 @@ public class SpannableUtils {
     }
 
     /**
+     * 生成变色文字
+     * @author YOLANDA
+     * @param msg 要变色的文字
+     * @param color 颜色
+     * @param start 开始的位置
+     * @param end 结束的位置
+     * @return
+     */
+    public static SpannableString getSpannableStringColor(CharSequence msg, int color, int start, int end){
+        SpannableString builder = new SpannableString(msg);
+        builder.setSpan(new ForegroundColorSpan(color), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        return builder;
+    }
+
+    /**
      * 设置字符串中部分串的字体大小
      *
      * @param sp

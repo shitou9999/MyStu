@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import com.stu.com.app2.R;
 
+/**
+ * 简略版ViewPager
+ */
 public class KJGalleryActivity extends Activity {
 
     public static final String URL_KEY = "KJGalleryActivity_url";
