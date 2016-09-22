@@ -35,7 +35,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2016/7/11.
- * 仿百度地图
+ * 仿百度地图 ddd
  */
 public class BottomSheetActivity extends AppCompatActivity implements GridAdapter.OnRecyclerViewItemClickListener{
     public static final String TAG="jereh";

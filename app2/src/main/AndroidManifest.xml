@@ -1,54 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.stu.com.app2">
+    package="com.stu.com.app2" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme" >
         </activity>
-        <activity android:name=".adapter_test.MultiItemListViewActivity"/>
-        <activity android:name=".adapter_test.MultiItemRvActivity"/>
-        <activity android:name=".adapter_test.RecyclerViewActivity"/>
-        <activity android:name=".adapter_test.MainActivity"/>
+        <activity android:name=".adapter_test.MultiItemListViewActivity" />
+        <activity android:name=".adapter_test.MultiItemRvActivity" />
+        <activity android:name=".adapter_test.RecyclerViewActivity" />
+        <activity android:name=".adapter_test.MainActivity" />
         <activity
             android:name=".toolbar.ToolbarActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name=".BottomSheetBehavior.BottomSheetActivity">
+        <activity android:name=".BottomSheetBehavior.BottomSheetActivity" >
         </activity>
-        <activity android:name=".gallery.KJGalleryActivity"/>
-        <activity android:name=".custom_view.ch01_Drawable_Widget_Activity">
+        <activity android:name=".gallery.KJGalleryActivity" />
+        <activity android:name=".custom_view.ch01_Drawable_Widget_Activity" >
         </activity>
-        <activity android:name=".MagicViewPager.ViewPagerActivity">
+        <activity android:name=".MagicViewPager.ViewPagerActivity" >
 
             <!-- 显示三个页面的ViewPager -->
         </activity>
         <activity
             android:name=".MagicViewPager.MainActivity_ViewPager"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name=".custom_view.CircleTextProgressbar.CustomTestActitvty">
+        <activity android:name=".custom_view.CircleTextProgressbar.CustomTestActitvty" >
         </activity>
-        <activity android:name=".Timer.TimerActitvty">
+        <activity android:name=".Timer.TimerActitvty" >
         </activity>
         <activity
             android:name=".BadgeActionProvider.ch01_BadgeActitvty"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name=".Scroller.ch01_ScrollerTestActitvty">
+        <activity android:name=".Scroller.ch01_ScrollerTestActitvty" >
+        </activity>
+        <activity
+            android:name=".BottomSheetBehavior.MainActivityBottomSheet"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".BottomSheetBehavior.BackTopActivity"
+            android:label="回到顶部"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BottomSheetBehavior.ZhihuActivity"
+            android:label="知乎滑动隐藏"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BottomSheetBehavior.SwipeDismissBehaviorActivity"
+            android:label="滑动删除Behavior"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BottomSheetBehavior.BottomSheetBehaviorActivity"
+            android:label="底部覆盖Behavior"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".gridview.GridView01Activity" >
         </activity>
     </application>
 
