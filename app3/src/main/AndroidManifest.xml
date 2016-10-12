@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.stu.com.app3">
-    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -19,23 +20,27 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".actitvty.MyBehaviorActivity"
-                  android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".actitvty.BottomSheetActivity"
-                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".actitvty.MyBehaviorActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".actitvty.BottomSheetActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".TouchHelper.LineActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".TouchHelper.LineActivity2"
             android:label="滑动显示隐藏布局"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".TouchHelper.GridActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".TouchHelper.StaggeredActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ImageUp.ImageUpActivity">
+        </activity>
     </application>
 
 </manifest>
