@@ -41,6 +41,10 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ImageUp.ImageUpActivity">
         </activity>
+        <activity android:name=".HandlerThread.HandlerThreadActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>
