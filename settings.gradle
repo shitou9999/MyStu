@@ -1,2 +1,2 @@
-include ':app', ':app2', ':app3', ':app4'
+include ':app', ':app2', ':app3', ':app4', ':app5'
 //包含哪些模块，比如有app和library：

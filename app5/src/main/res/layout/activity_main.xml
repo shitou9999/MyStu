@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.study.shitou.app5.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试表情文字"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_write_status"
+        style="@style/TextViewSubhead"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:gravity="top"
+        android:minLines="3"
+        android:maxLength="140"
+        android:hint="写评论..."
+        android:textColorHint="@color/txt_gray" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="哈哈哈哈"/>
+
+    <LinearLayout
+        android:id="@+id/ll_emotion_dashboard"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_emotion_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </android.support.v4.view.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/rg_emotion_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_emotion_dashboard_recently"
+                style="@style/RadioButtonEmotionDashboard"
+                android:text="最近" />
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rb_emotion_dashboard_default"
+                style="@style/RadioButtonEmotionDashboard"
+                android:text="默认" />
+
+            <RadioButton
+                android:id="@+id/rb_emotion_dashboard_emoji"
+                style="@style/RadioButtonEmotionDashboard"
+                android:text="Emoji" />
+
+            <RadioButton
+                android:id="@+id/rb_emotion_dashboard_langxiaohua"
+                style="@style/RadioButtonEmotionDashboard"
+                android:text="浪小花" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
