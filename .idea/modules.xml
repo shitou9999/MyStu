@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/app2/app2.iml" filepath="$PROJECT_DIR$/app2/app2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app3/app3.iml" filepath="$PROJECT_DIR$/app3/app3.iml" />
       <module fileurl="file://$PROJECT_DIR$/app4/app4.iml" filepath="$PROJECT_DIR$/app4/app4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/audiorecorddemo/audiorecorddemo.iml" filepath="$PROJECT_DIR$/audiorecorddemo/audiorecorddemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/webviewh5demo/webviewh5demo.iml" filepath="$PROJECT_DIR$/webviewh5demo/webviewh5demo.iml" />
     </modules>
   </component>
