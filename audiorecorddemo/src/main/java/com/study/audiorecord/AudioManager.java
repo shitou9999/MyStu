@@ -149,14 +149,6 @@ public class AudioManager {
     }
     ////////////////////////////////////////////////////////////////////////
 
-    public void discardRecording() {
-
-
-    }
-
-    public void stop(){
-        mRecorder.stop();
-    }
 
 
 }

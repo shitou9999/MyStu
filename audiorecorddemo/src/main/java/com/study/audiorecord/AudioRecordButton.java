@@ -72,14 +72,13 @@ public class AudioRecordButton extends Button implements AudioManager.AudioStage
     //开始录音
     private void startRecording() {
         try {
-//            mAudioManager.startRecording();
             mAudioManager.prepareAudio();
             mReady = true;
             vibrator.vibrate(50);
         } catch (Exception e) { ///有个非法状态异常
             Log.i("shitou",e.toString());
             if (mAudioManager != null) {
-                mAudioManager.discardRecording();
+                mAudioManager.cancel();
                 final AlertDialog.Builder builder = new AlertDialog.Builder(getContext())
                         .setTitle("开启录音权限")
                         .setMessage("检测到录音失败，请尝试按以下路径开启录音权限:\n\n" + "方式一：在弹出的权限选择框中勾中以后不再提醒，并选择允许\n\n" +
@@ -190,17 +189,17 @@ public class AudioRecordButton extends Button implements AudioManager.AudioStage
                 // 如果按的时间太短，还没准备好或者时间录制太短，就离开了，则显示这个dialog
                 if (!isRecording || mTime < 0.6f) {
                     mDialogManager.tooShort();
-                    mAudioManager.discardRecording();
+                    mAudioManager.cancel();
                     mHandler.sendEmptyMessageDelayed(MSG_DIALOG_DISMISS, 1300);// 持续1.3s
                 } else if (mCurrentState == STATE_RECORDING) {//正常录制结束
-                    mAudioManager.stop();
-//                    mAudioManager.stopRecoding();
+                    mDialogManager.dismissDialog();
+                    mAudioManager.release();
                     if (mListener != null) {
                         mListener.onFinished(mTime, mAudioManager.getCurrentFilePath());
                     }
                 } else if (mCurrentState == STATE_WANT_TO_CANCEL) {
                     // cancel
-                    mAudioManager.discardRecording();
+                    mAudioManager.cancel();
                 }
                 reset();// 恢复标志位
                 break;
